@@ -1,0 +1,351 @@
+$base_color: #3A5F56;
+$second_color: #292C32;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.btn{
+    color: white;
+    background-color: $base_color;
+    border-radius: 6px;
+    padding: 10px 18px;
+}
+
+.header{
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    &__box{
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__menu{
+        display: flex;
+    }
+
+    &__link{
+        color: $base_color;
+        font-size: 16px;
+
+        &:hover{
+            color: $second_color;
+        }
+    }
+
+    &__item{
+        margin-right: 30px;
+    }
+
+    &__cart{
+        display: flex;
+        gap: 8px;
+        &::before{
+            content: '';
+            background: url(../img/cart.svg);
+            display: block;
+            width: 17px;
+            height: 17px;
+        }
+        &::after{
+            content: '0';
+            color: $base_color;
+            background-color: white;
+            padding: 0 6px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.main{
+    background: url(../img/background.png) no-repeat center center / cover;
+    padding: 100px 0;
+
+    &__wrap{
+        display: flex;
+        gap: 64px;
+    }
+
+    &__title{
+        color: $base_color;
+        font-size: 48px;
+        margin-bottom: 15px;
+        padding-top: 260px;
+    }
+
+    &__text{
+        color: $base_color;
+        font-size: 16px;
+        margin-bottom: 27px;
+    }
+}
+
+.services{
+    padding: 100px 0;
+
+    &__title{
+        color: $base_color;
+        font-size: 32px;
+        margin-bottom: 11px;
+        text-align: center;
+    }
+
+    &__text{
+        color: $second_color;
+        font-size: 16px;
+        max-width: 590px;
+        margin: 0 auto;
+        text-align: center;
+        &__center{
+            text-align: center;
+        }
+    }
+
+    &__row{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    &__card{
+        max-width: 380px;
+        border-radius: 16px;
+        background-color: #F4F3F0;
+        padding: 30px;
+    }
+
+    &__icon{
+        width: 40px;
+        height: 48px;
+        margin-bottom: 9px;
+    }
+
+    &__subtitle{
+        color: $base_color;
+        font-size: 24px;
+        margin-top: 6px;
+    }
+
+    &__text{
+        color: $second_color;
+        font-size: 16px;
+    }
+
+    &__text1{
+        color: $second_color;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    &__read{
+        color: $base_color;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .arrow{
+        padding-top: 10px;
+    }
+}
+
+.middle{
+    padding: 100px 0;
+    background: url(../img/Frame.png) no-repeat center center / cover;
+
+    &__title{
+        color: #DB343B;
+        font-size: 32px;
+        margin-bottom: 11px;
+        text-align: center;
+    }
+
+    &__text{
+        color: $second_color;
+        font-size: 16px;
+        max-width: 590px;
+        margin: 0 auto;
+        text-align: center;
+        &__center{
+            text-align: center;
+        }
+    }
+
+    &__row{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    &__card{
+        max-width: 379px;
+        background-color: #ffffff;
+    }
+
+    &__tekst{
+        padding: 29px;
+    }
+
+    &__subtitle{
+        color: $base_color;
+        font-size: 24px;
+    }
+
+    &__text1{
+        color: $second_color;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    &__read{
+        color: $base_color;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding-top: 30px;
+    }
+
+    .arrow{
+        padding-top: 10px;
+    }
+}
+
+.final{
+    padding: 100px 0;
+    background: url(../img/Frame1.png) no-repeat center center / cover;
+   
+    &__parent{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card{
+        max-width: 800px;
+        border-radius: 16px;
+        background-color: #F4F3F0;
+    }
+
+    &__tekst{
+        display: flex;
+        align-items: center;
+    }
+
+    &__title{
+        color: $second_color;
+        font-size: 28px;
+        text-align: left;
+        padding: 80px;
+        max-width: 460px;
+    }
+
+    &__btn1{
+        font-size: 20px;
+        padding: 0px 80px;
+    }
+}
+
+
+.footer{
+    padding: 100px 0;
+    background: url(../img/Frame2.png) no-repeat center center / cover;
+
+    &__parent1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+
+    &__texts {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    &__Pages{
+        color: #B87D58;
+        text-transform: uppercase;
+    }
+
+    &__text2 {
+        margin-left: 80px;
+    }
+
+    &__text3 {
+        margin-left: 80px;
+    }
+
+    &__text4{
+        margin-left: 80px;
+    }
+
+    &__logo{
+        color: #156963;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__btn{
+        position: absolute; 
+        top: 0; 
+        right: 0; 
+        border: none; 
+        background-color: transparent; 
+        cursor: pointer;
+    }
+
+    .login__input{
+        display: inline-block;
+        width: 400px;
+        height: 53px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        padding: 15px 0px 15px 25px;
+        transition: all 0.1s ease-out;
+    }
+
+    &__input{
+        position: relative; 
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    &__grand{
+        color: white;
+        padding-top: 80px;
+        padding-left: 40px;
+    }
+        
+}
